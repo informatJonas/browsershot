@@ -66,6 +66,8 @@ const callChrome = async pup => {
 
         if (!browser) {
             browser = await puppet.launch({
+                product: 'firefox',
+                headless: false,
                 ignoreHTTPSErrors: request.options.ignoreHttpsErrors,
                 executablePath: request.options.executablePath,
                 args: request.options.args || [],
