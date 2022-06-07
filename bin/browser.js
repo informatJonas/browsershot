@@ -41,7 +41,7 @@ const callChrome = async pup => {
     let page;
     let output;
     let remoteInstance;
-    const puppet = (pup || require('puppeteer'));
+    const puppet = (pup || require('puppeteer-firefox'));
 
     try {
         if (request.options.remoteInstanceUrl || request.options.browserWSEndpoint ) {
